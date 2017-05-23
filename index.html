@@ -225,16 +225,16 @@
 <p>9、<code>:password</code> 只选择密码元素相当于input[type=password]</p>
 <p>10、<code>:radio</code> 只选择单选元素相当于input[type=radio]</p>
 <p>11、<code>:reset</code> 只选择重置按钮相当于 input[type=reset]或者button[type=reset]</p>
-<p>12、:selected 只选择选中的列表元素</p>
-<p>13、:submit 只选择提交按钮相当于 input[type=submit]或者button[type=submit]</p>
-<p>14、:text 只选择文本元素input[type=text]或者没有指定类型的input元素，因为默认是type=text</p>
+<p>12、<code>:selected</code> 只选择选中的列表元素</p>
+<p>13、<code>:submit</code> 只选择提交按钮相当于 input[type=submit]或者button[type=submit]</p>
+<p>14、<code>:text</code> 只选择文本元素input[type=text]或者没有指定类型的input元素，因为默认是type=text</p>
 <h3 id="4·4内容过滤器"><a href="#4·4内容过滤器" class="headerlink" title="4·4内容过滤器"></a>4·4内容过滤器</h3><p>根据内容来筛选元素，内容包括文本内容和子元素</p>
 <p>1、<code>:contains(text)</code> 选择包含特定文本的元素(子元素和文本都会被评估)</p>
 <p>2、<code>:empty</code> 选择没有子元素的元素(包含文本元素)</p>
 <p>3、<code>:has(seletor)</code> 选择包含至少有一个元素匹配特定选择器的元素 例如，div:has(span) 会选择含有span元素的全部div元素</p>
 <p>4、<code>:parent</code> 选择包含至少有一个子节点的元素(子节点是文本或者元素)</p>
 <h3 id="4·5其他过滤器"><a href="#4·5其他过滤器" class="headerlink" title="4·5其他过滤器"></a>4·5其他过滤器</h3><p>1、<code>:animated</code> 只选择动画模式的元素</p>
-<p>2、<code>:header</code>  只选择头元素</p><h1>~<h6>的元素<p></p>
+<p>2、<code>:header</code>  只选择头元素h1~h6的元素</p>
 <p>3、<code>:hidden</code> 只选择隐藏的元素</p>
 <p>4、<code>:lang(language)</code> 只选择采用特定语言的元素</p>
 <p>5、<code>:not(selector)</code> 排除选择器选择的元素</p>
@@ -247,7 +247,7 @@
         return element.innerHTML.match(/^\w+$);
     }
 }) ;</code></p>
-</h6></h1>
+
       
 
       
