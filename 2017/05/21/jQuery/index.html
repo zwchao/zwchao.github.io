@@ -22,7 +22,7 @@ $(&amp;#39;div&amp;#39;)$(&amp;#39;div,cl">
 3、Class选择器$(&amp;#39;.class1.class2......&amp;#39;) 支持连接查询语句
 4、元素选择器
 $(&amp;#39;div&amp;#39;)$(&amp;#39;div,cl">
-<meta property="og:updated_time" content="2017-05-23T09:33:55.026Z">
+<meta property="og:updated_time" content="2017-05-23T09:45:12.885Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery 之选择器">
 <meta name="twitter:description" content="一、基本选择器1、通用选择器$(&amp;#39;*&amp;#39;)
@@ -193,7 +193,7 @@ $(&amp;#39;div&amp;#39;)$(&amp;#39;div,cl">
 <h2 id="二、根据层级查找元素"><a href="#二、根据层级查找元素" class="headerlink" title="二、根据层级查找元素"></a>二、根据层级查找元素</h2><p>适用只需要查找某个元素的子元素可使用这种方法<br>$(‘ul.my-list &gt; li &gt; a’)<br>即选择类名为my-list的ul的第一个子元素li的第一个子元素a标签</p>
 <p>| 选择器        | 描述          | css是否支持 |</p>
 <p>| ————- |:————-:| —–:|</p>
-<p>| E F      | E中的所有F | 是 |</p>
+<p>| E F           | E中的所有F | 是 |</p>
 <p>| E&gt;F      | E中的第一个直接子元素F的所有元素      |   是|</p>
 <p>| E+F | 在和紧邻E同级的元素之间寻找所有的F      |    是 |<br>|E~F|在和E同级的任意元素之间寻找所有的F|是|</p>
 <h2 id="三、通过属性来选择元素"><a href="#三、通过属性来选择元素" class="headerlink" title="三、通过属性来选择元素"></a>三、通过属性来选择元素</h2><p>利用方括号来表示<br>1、<code>$(&#39;a[herf^=&#39;http://&#39;]&#39;)</code><br>可以选择包含 http:// 开头的选择器</p>
@@ -225,33 +225,33 @@ $(&amp;#39;div&amp;#39;)$(&amp;#39;div,cl">
 <p>9、 <code>:only-child</code> 只匹配没有兄弟元素的子元素</p>
 <p>10、<code>:only-of-type</code> 只匹配没有相同类型的兄弟元素的子元素</p>
 <h3 id="4·3-表单过滤器"><a href="#4·3-表单过滤器" class="headerlink" title="4·3 表单过滤器"></a>4·3 表单过滤器</h3><p>通过表单过滤器可以实时检查控件的状态</p>
-<p>1、:checkbox 只选择复选框元素相当于input[type=checkbox]</p>
-<p>2、:checked  只选择处于被选中的元素，复选框，单选框，或者下拉框元素</p>
-<p>3、:disabled 只选择禁用状态的元素</p>
-<p>4、:enabled  只选择启用状态的元素</p>
-<p>5、:file 只选择文件input元素相当与input[type=file]</p>
-<p>6、:focus 只选择处于聚焦状态的元素</p>
-<p>7、:image 只选择图片input元素相当与input[type=image]</p>
-<p>8、:input 只选择表单元素(input select textarea button)</p>
-<p>9、:password 只选择密码元素相当于input[type=password]</p>
-<p>10、:radio 只选择单选元素相当于input[type=radio]</p>
-<p>11、:reset 只选择重置按钮相当于 input[type=reset]或者button[type=reset]</p>
+<p>1、<code>:checkbox</code> 只选择复选框元素相当于input[type=checkbox]</p>
+<p>2、<code>:checked</code>  只选择处于被选中的元素，复选框，单选框，或者下拉框元素</p>
+<p>3、<code>:disabled</code> 只选择禁用状态的元素</p>
+<p>4、<code>:enabled</code>  只选择启用状态的元素</p>
+<p>5、<code>:file</code> 只选择文件input元素相当与input[type=file]</p>
+<p>6、<code>:focus</code> 只选择处于聚焦状态的元素</p>
+<p>7、<code>:image</code> 只选择图片input元素相当与input[type=image]</p>
+<p>8、<code>:input</code> 只选择表单元素(input select textarea button)</p>
+<p>9、<code>:password</code> 只选择密码元素相当于input[type=password]</p>
+<p>10、<code>:radio</code> 只选择单选元素相当于input[type=radio]</p>
+<p>11、<code>:reset</code> 只选择重置按钮相当于 input[type=reset]或者button[type=reset]</p>
 <p>12、:selected 只选择选中的列表元素</p>
 <p>13、:submit 只选择提交按钮相当于 input[type=submit]或者button[type=submit]</p>
 <p>14、:text 只选择文本元素input[type=text]或者没有指定类型的input元素，因为默认是type=text</p>
 <h3 id="4·4内容过滤器"><a href="#4·4内容过滤器" class="headerlink" title="4·4内容过滤器"></a>4·4内容过滤器</h3><p>根据内容来筛选元素，内容包括文本内容和子元素</p>
-<p>1、:contains(text) 选择包含特定文本的元素(子元素和文本都会被评估)</p>
-<p>2、:empty 选择没有子元素的元素(包含文本元素)</p>
-<p>3、:has(seletor) 选择包含至少有一个元素匹配特定选择器的元素 例如，div:has(span) 会选择含有span元素的全部div元素</p>
-<p>4、:parent 选择包含至少有一个子节点的元素(子节点是文本或者元素)</p>
-<h3 id="4·5其他过滤器"><a href="#4·5其他过滤器" class="headerlink" title="4·5其他过滤器"></a>4·5其他过滤器</h3><p>1、:animated 只选择动画模式的元素</p>
-<p>2、:header  只选择头元素</p><h1>~<h6>的元素<p></p>
-<p>3、:hidden 只选择隐藏的元素</p>
-<p>4、:lang(language) 只选择采用特定语言的元素</p>
-<p>5、:not(selector) 排除选择器选择的元素</p>
-<p>6、:root 选择文档的根元素</p>
-<p>7、:target 通过文档的URL框架标识来选目标元素</p>
-<p>8、:visible 只选择可见的元素</p>
+<p>1、<code>:contains(text)</code> 选择包含特定文本的元素(子元素和文本都会被评估)</p>
+<p>2、<code>:empty</code> 选择没有子元素的元素(包含文本元素)</p>
+<p>3、<code>:has(seletor)</code> 选择包含至少有一个元素匹配特定选择器的元素 例如，div:has(span) 会选择含有span元素的全部div元素</p>
+<p>4、<code>:parent</code> 选择包含至少有一个子节点的元素(子节点是文本或者元素)</p>
+<h3 id="4·5其他过滤器"><a href="#4·5其他过滤器" class="headerlink" title="4·5其他过滤器"></a>4·5其他过滤器</h3><p>1、<code>:animated</code> 只选择动画模式的元素</p>
+<p>2、<code>:header</code>  只选择头元素</p><h1>~<h6>的元素<p></p>
+<p>3、<code>:hidden</code> 只选择隐藏的元素</p>
+<p>4、<code>:lang(language)</code> 只选择采用特定语言的元素</p>
+<p>5、<code>:not(selector)</code> 排除选择器选择的元素</p>
+<p>6、<code>:root</code> 选择文档的根元素</p>
+<p>7、<code>:target</code> 通过文档的URL框架标识来选目标元素</p>
+<p>8、<code>:visible</code> 只选择可见的元素</p>
 <h3 id="4·6-自定义过滤器"><a href="#4·6-自定义过滤器" class="headerlink" title="4·6 自定义过滤器"></a>4·6 自定义过滤器</h3><p>通过一个函数来自定义过滤器<br>例如，自定义过滤器来选择元素，这些元素只包含数字字母或者下划线</p>
 <p><code>$.expr[&quot;:&quot;].onlyText=$.expr.createPsedo(function(filterParam){
     return function(element,context,isXml){
